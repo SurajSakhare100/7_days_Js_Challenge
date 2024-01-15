@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FBE7C6;
+}
+a 
+h1{
+    color: #3EB489;
+    text-align: center;
+    font-size: 50px;
+}
+.sign_in_box{
+    width: 400px;
+    height:auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+#title{
+    font-size: 30px;
+    padding: 1% 0;
+    color: blue;
+    text-transform: capitalize;
+}
+.sign_in_box form{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+   
+}
+.sign_in_box form div{
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+}
+
+.sign_in_box form div input[type="text"],[type="username"],[type="email"],[type="password"],[type="date"]{
+    width: 100%;
+    height: 35px;
+    margin: auto;
+    margin-top: 5px;
+    padding-left: 5px;
+}
+#submit{
+    background-color: #3EB489;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+.link{
+    width: 90%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+}
+a p{
+    color: blue;
+}
+.required::after{
+    content: ' *';
+    color: red;
+}
+@media only  screen and (max-width:400px) {
+    .sign_in_box{
+        width: 90%;
+    }
+    .link{
+       display: inline-block;
+    }
+    .link a p{
+       width: 100%;
+       margin-bottom: 5px;
+    }
+    h1{
+        font-size: 2em;
+    }
+    .container{
+        gap: 20px;
+    }
+}
